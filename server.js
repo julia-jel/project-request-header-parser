@@ -28,7 +28,7 @@ var ip = require("ip");
 
 app.get("/api/whoami", function(req, res) {
   res.json({
-    "ipadress": ip.address(),
+    "ipaddress": ip.address(),
     "language": req.header("Accept-Language"),
     "software": req.header("User-Agent")
   });
